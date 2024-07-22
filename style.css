@@ -18,7 +18,7 @@ body {
 }
 
 .container .box {
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 300px;
     background: #2d82b5;
@@ -93,7 +93,7 @@ body {
     color: #fff;
 }
 
-@media (max-width: 368px) {
+@media (max-width: 980px) {
     .container {
         flex-direction: column;
     }
