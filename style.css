@@ -18,44 +18,43 @@ body {
 }
 
 .container .box {
-	position: relative;
-	width: 300px;
+    position: relative;
+    width: 300px;
     height: 300px;
-	background: #2d82b5;
-	float: left;
-	margin: 15px;
-	box-sizing: border-box;
-	overflow: hidden;
-	border-radius: 10px;
+    background: #2d82b5;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .container .box .icon {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #015586;
-	transition: 0.5s;
-	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #015586;
+    transition: 0.5s;
+    z-index: 1;
 }
 
 .container .box:hover .icon {
-	top: 20px;
-	left: calc(50% - 40px);
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 .container .box .icon .fa {
     font-size: 80px;
     color: #fff;
     transition: all 0.5s ease;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .container .box:hover .icon .fa {
@@ -89,7 +88,13 @@ body {
 }
 
 .container .box .content p {
-    margin:  10px 0 0;
+    margin: 10px 0 0;
     padding: 5px;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }
